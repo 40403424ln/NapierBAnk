@@ -1,0 +1,50 @@
+﻿<Window x:Class="NapierBank.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NapierBank"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="591.2" Width="1281.969">
+    <Grid RenderTransformOrigin="0.51,0.556">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#FFC3E7E8" Offset="0.997"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="txtHeader" HorizontalAlignment="Left" Height="23" Margin="32,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtBody" HorizontalAlignment="Left" Height="289" AcceptsReturn ="True" Margin="32,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266"/>
+        <Label x:Name="lblHeaderInput" Content="Header" HorizontalAlignment="Left" Margin="32,64,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblBodyInput" Content="Body" HorizontalAlignment="Left" Margin="32,121,0,0" VerticalAlignment="Top"/>
+        <Label Content="Message Id :" HorizontalAlignment="Left" Margin="400,156,0,0" VerticalAlignment="Top"/>
+        <Label Content="Message Type :" HorizontalAlignment="Left" Margin="386,187,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.087,0.713"/>
+        <Label Content="Message Body :" HorizontalAlignment="Left" Margin="384,249,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblHeaderOutput" Content="N/A" HorizontalAlignment="Left" Margin="481,156,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblTypeOutput" Content="N/A" HorizontalAlignment="Left" Margin="481,187,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnEnter" Content="Enter" HorizontalAlignment="Left" Margin="32,441,0,0" VerticalAlignment="Top" Width="75" Click="btnEnter_Click"/>
+        <Label Content="Message Sender :" HorizontalAlignment="Left" Margin="374,218,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSenderOutput" Content="N/A" HorizontalAlignment="Left" Margin="481,217,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Margin="533,504,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.493,0.488" Click="btnNext_Click"/>
+        <Button x:Name="btnPrevious" Content="Previous" HorizontalAlignment="Left" Margin="422,504,0,0" VerticalAlignment="Top" Width="75" Click="btnPrevious_Click"/>
+        <Button x:Name="btnLoad" Content="Load" HorizontalAlignment="Left" Margin="33,505,0,0" VerticalAlignment="Top" Width="75" Click="btnLoad_Click"/>
+        <TextBox x:Name="txtLoad" HorizontalAlignment="Left" Height="23" Margin="145,500,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Trending" HorizontalAlignment="Left" Margin="760,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.556,0.439"/>
+        <Label Content="Mentions" HorizontalAlignment="Left" Margin="887,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.556,0.439"/>
+        <Label Content="SIR" HorizontalAlignment="Left" Margin="1030,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.556,0.439"/>
+        <Label Content="Significant Incident Report : " HorizontalAlignment="Left" Margin="323,68,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSirOutput" Content="N/A" HorizontalAlignment="Left" Margin="483,69,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sort Code :" HorizontalAlignment="Left" Margin="408,94,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSortCodeOutput" Content="N/A" HorizontalAlignment="Left" Margin="482,94,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nature of Incident :" HorizontalAlignment="Left" Margin="364,125,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNoiOutput" Content="N/A" HorizontalAlignment="Left" Margin="481,126,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblTrendingOutput" Content="N/A" HorizontalAlignment="Left" Margin="701,94,0,0" VerticalAlignment="Top" Height="350" Width="145"/>
+        <Label x:Name="lblMentionsOutput" Content="N/A" HorizontalAlignment="Left" Margin="851,94,0,0" VerticalAlignment="Top" Height="350" Width="145"/>
+        <Label x:Name="lblSirOutput1" Content="N/A" HorizontalAlignment="Left" Margin="1001,94,0,0" VerticalAlignment="Top" Height="350" Width="99"/>
+        <TextBlock x:Name="lblBodyOutput" HorizontalAlignment="Left" Height="240" Margin="484,249,0,0" TextWrapping="Wrap" Text="N/A" VerticalAlignment="Top" Width="181"/>
+        <Button x:Name="btnRefresh" Content="Refresh Lists" HorizontalAlignment="Left" Margin="851,504,0,0" VerticalAlignment="Top" Width="75" Click="btnRefresh_Click"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="1054,509,0,0" VerticalAlignment="Top" Width="75" Click="btnExit_Click"/>
+        <Label x:Name="lblNoiOutput1" Content="" HorizontalAlignment="Left" Margin="1100,94,0,0" VerticalAlignment="Top" Height="350" Width="149"/>
+
+    </Grid>
+</Window>
